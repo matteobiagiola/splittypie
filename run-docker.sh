@@ -4,9 +4,9 @@ usage() {
   echo "Run docker container with splittypie application"
   echo "Valid options:"
   echo " -h, prints this message."
-  echo " -a PORT, assigns application server binding port to localhost. Must be a number!!"
-  echo " -p yes|no, run docker for production or not"
-  echo " -n STRING, assigns a name to the running container (mandatory for production usage)"
+  echo " -a PORT [4200], assigns application server binding port to localhost. Must be a number!!"
+  echo " -p yes|no [no], run docker for production or not"
+  echo " -n STRING [default], assigns a name to the running container (mandatory for production usage)"
 }
 
 PORT_APP=4200
