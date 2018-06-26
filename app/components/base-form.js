@@ -12,14 +12,7 @@ export default Component.extend({
     modal: service(),
 
     saveButtonText: computed("formObject.{isNew,isSaving}", function () {
-        const isNew = get(this, "formObject.isNew");
-        const isSaving = get(this, "formObject.isSaving");
-
-        if (isSaving) {
-            return "Saving...";
-        }
-
-        return isNew ? "Create" : "Save";
+        return "Save";
     }),
 
     actions: {
